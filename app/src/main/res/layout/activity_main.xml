@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/cardview_dark_background">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/surv">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Помощник на хроне"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/black_han_sans"
+        android:labelFor="@+id/textInput"
+        android:text="Скорость с хронометра"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold">
+
+
+    </TextView>
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="сюды выхлоп"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Рабочий шар: "
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/sp_mass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:contextClickable="false"
+            android:gravity="center"
+            android:outlineAmbientShadowColor="@color/white"
+            android:padding="20dp"
+
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/massText"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="0dp"
+        android:gravity="center">
+    </TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Энергия"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+            <TextView
+                android:text="Скорость шара"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/result_text1"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"></TextView>
+            <TextView
+                android:id="@+id/result_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"></TextView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Подсчитать" />
+        <ImageView
+            android:id="@+id/img"
+            android:paddingVertical="50dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:layout_width="250dp"
+            android:layout_height="250dp">
+
+        </ImageView>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
